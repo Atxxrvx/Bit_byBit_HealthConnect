@@ -19,6 +19,8 @@ import SymptomCheckerCard from './components/SymptomCheckerCard.js';
 import SymptomCheckerResult from './components/SymptomCheckerResult.js'
 import Footer from './components/smallfooter.js';
 import Navbar from './components/Navbar.js';
+import BMICalculator from './components/BMI.js';
+import AboutUs from './pages/Aboutus.js';
 
 function App() {
 
@@ -83,6 +85,8 @@ function App() {
                   <Route path="/queryres" element={user ? <QueryResult /> : <Navigate to='/login' />} />
                   <Route path='/nutrisearch' element={user ? <NutriSearch /> : <Navigate to='/login' />} />
                   <Route path='/nutrition' element={user ? <Nutrition /> : <Navigate to='/login' />} />
+                  <Route path='/bmi' element={user ? <BMICalculator /> : <Navigate to='/login' />} />
+                  <Route path='/about' element={user ? <AboutUs /> : <Navigate to='/login' />} />
                   <Route path='/bookappoint' element={user ? <BookAppointment /> : <Navigate to='/login' />} />user?
                   <Route path='/appointmentform' element={user ? <AppointmentForm /> : <Navigate to='/login' />} />
                   <Route path='/viewAppointment' element={user ? <ViewAppointments /> : <Navigate to='/login' />} />

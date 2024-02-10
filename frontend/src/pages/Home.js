@@ -33,7 +33,7 @@ const Home = () => {
                 <div className="hero-overlay">
                     <h1 className="hero-title">Connect with Your Health</h1>
                     <p className="hero-subtitle">Your path to a healthier lifestyle starts here</p>
-                    {!user && <Link to="/login" className="login-btn">Login</Link>}
+                    {!user && <Link to="/login" className="login-btn font-bold px-6 py-3">Login</Link>}
                 </div>
             </header>
             <div className='flex flex-col justify-center items-center'>
